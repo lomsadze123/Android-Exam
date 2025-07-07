@@ -6,11 +6,11 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import com.example.finalproject.databinding.FragmentSignUpBinding
-import com.example.finalproject.presentation.base.BaseFragment
-import com.example.finalproject.presentation.event.SignUpEvent
+import com.example.android_exam.databinding.FragmentSignUpBinding
+import com.example.android_exam.presentation.base.BaseFragment
+import com.example.android_exam.presentation.event.SignUpEvent
+import com.example.android_exam.presentation.state.sign_up.SignUpState
 import com.example.finalproject.presentation.screen.auth.AuthContainerFragmentDirections
-import com.example.finalproject.presentation.state.sign_up.SignUpState
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -27,7 +27,8 @@ class SignUpFragment : BaseFragment<FragmentSignUpBinding>(FragmentSignUpBinding
                         etSignUpEmail.text.toString(),
                         etSignUpPassword.text.toString(),
                         etSignUpRepeatPassword.text.toString(),
-                        etSignUpFullName.text.toString())
+                        etSignUpFullName.text.toString()
+                    )
                 }
             )
         }

@@ -12,10 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/light_black"
-        app:tabTextColor="@color/cream"
-        app:tabSelectedTextColor="@color/white"
         app:tabIndicatorColor="@color/cream"
-        app:tabMode="fixed" />
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/cream"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"

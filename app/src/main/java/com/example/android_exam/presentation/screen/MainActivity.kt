@@ -6,8 +6,8 @@ import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
-import com.example.finalproject.R
-import com.example.finalproject.databinding.ActivityMainBinding
+import com.example.android_exam.R
+import com.example.android_exam.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

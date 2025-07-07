@@ -2,12 +2,12 @@ package com.example.android_exam.presentation.screen.sign_in
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.finalproject.domain.usecase.validation.EmailValidatorUseCase
-import com.example.finalproject.domain.usecase.validation.PasswordValidatorUseCase
-import com.example.finalproject.data.common.Resource
-import com.example.finalproject.domain.usecase.sign_in.SignInWithEmailAndPasswordUseCase
-import com.example.finalproject.presentation.event.SignInEvent
-import com.example.finalproject.presentation.state.sign_in.SignInState
+import com.example.android_exam.presentation.event.SignInEvent
+import com.example.android_exam.presentation.state.sign_in.SignInState
+import com.example.androidproject.data.common.Resource
+import com.example.androidproject.domain.usecase.sign_in.SignInWithEmailAndPasswordUseCase
+import com.example.androidproject.domain.usecase.validation.EmailValidatorUseCase
+import com.example.androidproject.domain.usecase.validation.PasswordValidatorUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow

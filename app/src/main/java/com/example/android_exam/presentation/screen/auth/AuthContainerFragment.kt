@@ -1,5 +1,7 @@
 package com.example.android_exam.presentation.screen.auth
 
+import com.example.android_exam.databinding.FragmentAuthContainerBinding
+import com.example.android_exam.presentation.base.BaseFragment
 import com.example.finalproject.databinding.FragmentAuthContainerBinding
 import com.example.finalproject.presentation.base.BaseFragment
 import com.google.android.material.tabs.TabLayoutMediator

@@ -12,14 +12,15 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.navArgs
-import com.example.finalproject.databinding.FragmentWallpaperDetailsBinding
-import com.example.finalproject.databinding.WallpaperSettingDialogBinding
-import com.example.finalproject.presentation.base.BaseFragment
-import com.example.finalproject.presentation.event.WallpaperDetailsEvent
-import com.example.finalproject.presentation.extension.loadImage
-import com.example.finalproject.presentation.extension.showSnackBar
-import com.example.finalproject.presentation.state.wallpaper_details.WallpaperDetailsState
-import com.example.finalproject.presentation.util.WallpaperUtil
+import com.example.android_exam.databinding.FragmentWallpaperDetailsBinding
+import com.example.android_exam.databinding.WallpaperSettingDialogBinding
+import com.example.android_exam.presentation.base.BaseFragment
+import com.example.android_exam.presentation.event.WallpaperDetailsEvent
+import com.example.android_exam.presentation.extension.loadImage
+import com.example.android_exam.presentation.extension.showSnackBar
+import com.example.android_exam.presentation.state.wallpaper_details.WallpaperDetailsState
+import com.example.android_exam.presentation.util.WallpaperUtil
+import com.example.finalproject.presentation.screen.wallpaper_details.WallpaperDetailsFragmentArgs
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -69,17 +70,29 @@ class WallpaperDetailsFragment() :
         window?.attributes = layoutParams
 
         dialogBinding.btnSetLockScreen.setOnClickListener {
-            wallpaperUtil.downloadAndSetWallpaper(imageUrl = imgUrl, setHomeScreen = false, setLockScreen = true)
+            wallpaperUtil.downloadAndSetWallpaper(
+                imageUrl = imgUrl,
+                setHomeScreen = false,
+                setLockScreen = true
+            )
             dialog.dismiss()
         }
 
         dialogBinding.btnSetHomeScreen.setOnClickListener {
-            wallpaperUtil.downloadAndSetWallpaper(imageUrl = imgUrl, setHomeScreen = true, setLockScreen = false)
+            wallpaperUtil.downloadAndSetWallpaper(
+                imageUrl = imgUrl,
+                setHomeScreen = true,
+                setLockScreen = false
+            )
             dialog.dismiss()
         }
 
         dialogBinding.btnSetBoth.setOnClickListener {
-            wallpaperUtil.downloadAndSetWallpaper(imageUrl = imgUrl, setHomeScreen = true, setLockScreen = true)
+            wallpaperUtil.downloadAndSetWallpaper(
+                imageUrl = imgUrl,
+                setHomeScreen = true,
+                setLockScreen = true
+            )
             dialog.dismiss()
         }
 

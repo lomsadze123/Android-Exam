@@ -2,8 +2,8 @@ package com.example.android_exam.presentation.screen.splash
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.finalproject.domain.usecase.splash.GetUserUseCase
-import com.example.finalproject.presentation.event.SplashEvent
+import com.example.android_exam.presentation.event.SplashEvent
+import com.example.androidproject.domain.usecase.splash.GetUserUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -12,13 +12,14 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class SplashViewModel @Inject constructor(private val getUserUseCase: GetUserUseCase) : ViewModel() {
+class SplashViewModel @Inject constructor(private val getUserUseCase: GetUserUseCase) :
+    ViewModel() {
 
     private val _uiEvent = MutableSharedFlow<SplashUiEvent>(1)
     val uiEvent: SharedFlow<SplashUiEvent> get() = _uiEvent
 
     fun onEvent(event: SplashEvent) {
-        when(event) {
+        when (event) {
             is SplashEvent.ReadSessionEvent -> readSession()
         }
     }
@@ -27,11 +28,12 @@ class SplashViewModel @Inject constructor(private val getUserUseCase: GetUserUse
         viewModelScope.launch {
             delay(500)
             _uiEvent.emit(
-            if (getUserUseCase() == null) {
-                SplashUiEvent.NavigateToSignIn
-            }else {
-                SplashUiEvent.NavigateToWallpapers
-            })
+                if (getUserUseCase() == null) {
+                    SplashUiEvent.NavigateToSignIn
+                } else {
+                    SplashUiEvent.NavigateToWallpapers
+                }
+            )
         }
     }
 

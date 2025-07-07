@@ -12,15 +12,16 @@ import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.finalproject.databinding.FragmentWallpaperBinding
-import com.example.finalproject.data.common.AppError
-import com.example.finalproject.presentation.model.category.Categories
-import com.example.finalproject.presentation.base.BaseFragment
-import com.example.finalproject.presentation.event.WallpapersEvent
-import com.example.finalproject.presentation.extension.showSnackBar
-import com.example.finalproject.presentation.model.Image
-import com.example.finalproject.presentation.screen.wallpapers.adapter.WallpapersRecyclerViewAdapter
-import com.example.finalproject.presentation.screen.wallpapers.listener.OnWallpaperClickListener
+import com.example.android_exam.databinding.FragmentWallpaperBinding
+import com.example.android_exam.presentation.base.BaseFragment
+import com.example.android_exam.presentation.event.WallpapersEvent
+import com.example.android_exam.presentation.extension.showSnackBar
+import com.example.android_exam.presentation.model.Image
+import com.example.android_exam.presentation.model.category.Categories
+import com.example.android_exam.presentation.screen.wallpapers.adapter.WallpapersRecyclerViewAdapter
+import com.example.android_exam.presentation.screen.wallpapers.listener.OnWallpaperClickListener
+import com.example.androidproject.data.common.AppError
+import com.example.finalproject.presentation.screen.wallpapers.WallpaperFragmentDirections
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
@@ -69,7 +70,8 @@ class WallpaperFragment : BaseFragment<FragmentWallpaperBinding>(FragmentWallpap
         wallpaperRecyclerViewAdapter.addLoadStateListener { loadStates ->
             when (loadStates.refresh) {
                 is LoadState.Error -> {
-                    val error: AppError = AppError.fromException((loadStates.refresh as LoadState.Error).error)
+                    val error: AppError =
+                        AppError.fromException((loadStates.refresh as LoadState.Error).error)
                     binding.progressBarWallpaper.visibility = View.GONE
                     binding.root.showSnackBar(error.message)
                 }

@@ -9,10 +9,10 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestOptions
-import com.example.finalproject.R
-import com.example.finalproject.databinding.ImageRecyclerItemBinding
-import com.example.finalproject.presentation.model.Image
-import com.example.finalproject.presentation.screen.wallpapers.listener.OnWallpaperClickListener
+import com.example.android_exam.R
+import com.example.android_exam.databinding.ImageRecyclerItemBinding
+import com.example.android_exam.presentation.model.Image
+import com.example.android_exam.presentation.screen.wallpapers.listener.OnWallpaperClickListener
 
 class WallpapersRecyclerViewAdapter :
     PagingDataAdapter<Image, WallpapersRecyclerViewAdapter.ImageViewHolder>(

@@ -5,9 +5,10 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import com.example.finalproject.databinding.FragmentSplashBinding
-import com.example.finalproject.presentation.base.BaseFragment
-import com.example.finalproject.presentation.event.SplashEvent
+import com.example.android_exam.databinding.FragmentSplashBinding
+import com.example.android_exam.presentation.base.BaseFragment
+import com.example.android_exam.presentation.event.SplashEvent
+import com.example.finalproject.presentation.screen.splash.SplashFragmentDirections
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.buffer

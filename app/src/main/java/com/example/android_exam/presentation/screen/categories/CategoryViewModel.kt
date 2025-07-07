@@ -2,8 +2,8 @@ package com.example.android_exam.presentation.screen.categories
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.finalproject.presentation.model.category.Category
-import com.example.finalproject.domain.repository.CategoryRepository
+import com.example.android_exam.presentation.model.category.Category
+import com.example.androidproject.domain.repository.CategoryRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

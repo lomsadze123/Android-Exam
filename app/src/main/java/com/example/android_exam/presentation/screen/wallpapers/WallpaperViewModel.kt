@@ -4,11 +4,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
-import com.example.finalproject.presentation.model.category.Categories
-import com.example.finalproject.domain.usecase.wallpapers.GetWallpapersByFilterUseCase
-import com.example.finalproject.domain.usecase.wallpapers.GetWallpapersUseCase
-import com.example.finalproject.presentation.event.WallpapersEvent
-import com.example.finalproject.presentation.model.Image
+import com.example.android_exam.presentation.event.WallpapersEvent
+import com.example.android_exam.presentation.model.Image
+import com.example.android_exam.presentation.model.category.Categories
+import com.example.androidproject.domain.usecase.wallpapers.GetWallpapersByFilterUseCase
+import com.example.androidproject.domain.usecase.wallpapers.GetWallpapersUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.collectLatest
@@ -54,7 +54,10 @@ class WallpaperViewModel @Inject constructor(
 
     private fun filterByQuery(query: String) {
         viewModelScope.launch {
-            getWallpapersByFilterUseCase(query = query, category = Categories.ALL.category).collectLatest {
+            getWallpapersByFilterUseCase(
+                query = query,
+                category = Categories.ALL.category
+            ).collectLatest {
                 _pagingDataFlow.emit(it)
             }
         }

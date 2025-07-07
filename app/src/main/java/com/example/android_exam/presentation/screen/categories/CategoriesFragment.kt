@@ -8,10 +8,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.finalproject.R
-import com.example.finalproject.databinding.FragmentCategoriesBinding
-import com.example.finalproject.presentation.base.BaseFragment
-import com.example.finalproject.presentation.screen.categories.adapter.CategoriesRecyclerViewAdapter
+import com.example.android_exam.R
+import com.example.android_exam.databinding.FragmentCategoriesBinding
+import com.example.android_exam.presentation.base.BaseFragment
+import com.example.android_exam.presentation.screen.categories.adapter.CategoriesRecyclerViewAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

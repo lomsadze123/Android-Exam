@@ -5,9 +5,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.example.finalproject.databinding.CategoryRecyclerItemBinding
-import com.example.finalproject.presentation.model.category.Category
-import com.example.finalproject.presentation.extension.loadImage
+import com.example.android_exam.databinding.CategoryRecyclerItemBinding
+import com.example.android_exam.presentation.extension.loadImage
+import com.example.android_exam.presentation.model.category.Category
 
 class CategoriesRecyclerViewAdapter: ListAdapter<Category, CategoriesRecyclerViewAdapter.CategoryViewHolder>(
     CategoriesItemDiffCallback

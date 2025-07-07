@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_black"
-    tools:context=".presentation.screen.profile.ProfileFragment">
+    tools:context=".presentation.screen">
 
 
     <com.google.android.material.imageview.ShapeableImageView

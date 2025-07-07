@@ -2,14 +2,14 @@ package com.example.android_exam.presentation.screen.sign_up
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.finalproject.domain.usecase.validation.EmailValidatorUseCase
-import com.example.finalproject.data.common.Resource
-import com.example.finalproject.domain.usecase.sign_up.SignUpWithEmailAndPasswordUseCase
-import com.example.finalproject.domain.usecase.sign_up.UpdateDisplayNameUseCase
-import com.example.finalproject.domain.usecase.validation.FullNameValidationUseCase
-import com.example.finalproject.domain.usecase.validation.RepeatPasswordValidatorUseCase
-import com.example.finalproject.presentation.event.SignUpEvent
-import com.example.finalproject.presentation.state.sign_up.SignUpState
+import com.example.android_exam.presentation.event.SignUpEvent
+import com.example.android_exam.presentation.state.sign_up.SignUpState
+import com.example.androidproject.data.common.Resource
+import com.example.androidproject.domain.usecase.sign_up.SignUpWithEmailAndPasswordUseCase
+import com.example.androidproject.domain.usecase.sign_up.UpdateDisplayNameUseCase
+import com.example.androidproject.domain.usecase.validation.EmailValidatorUseCase
+import com.example.androidproject.domain.usecase.validation.FullNameValidationUseCase
+import com.example.androidproject.domain.usecase.validation.RepeatPasswordValidatorUseCase
 import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 import dagger.hilt.android.lifecycle.HiltViewModel

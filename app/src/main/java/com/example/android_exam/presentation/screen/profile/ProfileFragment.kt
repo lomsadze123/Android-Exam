@@ -5,10 +5,10 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
+import com.example.android_exam.databinding.FragmentProfileBinding
+import com.example.android_exam.presentation.base.BaseFragment
 import com.example.android_exam.presentation.event.ProfileEvent
-import com.example.finalproject.databinding.FragmentProfileBinding
-import com.example.finalproject.presentation.base.BaseFragment
-import com.example.finalproject.presentation.extension.loadImage
+import com.example.android_exam.presentation.extension.loadImage
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
