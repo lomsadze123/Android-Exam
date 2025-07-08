@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.model.category
+package com.example.android_exam.presentation.model.category
 
 enum class Categories(val category: String, val imgUrl: String) {
     ALL("all", "https://cdn.pixabay.com/photo/2011/12/14/12/17/galaxy-11098_1280.jpg"),

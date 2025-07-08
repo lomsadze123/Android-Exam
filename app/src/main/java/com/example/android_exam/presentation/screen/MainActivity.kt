@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen
+package com.example.android_exam.presentation.screen
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

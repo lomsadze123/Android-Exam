@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.state.wallpaper_details
+package com.example.android_exam.presentation.state.wallpaper_details
 
 import com.example.finalproject.presentation.model.Image
 

@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.categories.adapter
+package com.example.android_exam.presentation.screen.categories.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

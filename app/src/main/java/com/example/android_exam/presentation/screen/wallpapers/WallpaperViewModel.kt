@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.wallpapers
+package com.example.android_exam.presentation.screen.wallpapers
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

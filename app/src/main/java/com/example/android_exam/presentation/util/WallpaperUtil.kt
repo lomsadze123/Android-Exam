@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.util
+package com.example.android_exam.presentation.util
 
 import android.app.WallpaperManager
 import android.content.Context

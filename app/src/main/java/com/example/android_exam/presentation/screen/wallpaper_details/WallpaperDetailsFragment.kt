@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.wallpaper_details
+package com.example.android_exam.presentation.screen.wallpaper_details
 
 import android.os.Parcel
 import android.os.Parcelable

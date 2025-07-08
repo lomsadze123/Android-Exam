@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.state.sign_in
+package com.example.android_exam.presentation.state.sign_in
 
 
 data class SignInState(

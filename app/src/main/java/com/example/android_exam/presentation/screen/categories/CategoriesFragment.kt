@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.categories
+package com.example.android_exam.presentation.screen.categories
 
 import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult

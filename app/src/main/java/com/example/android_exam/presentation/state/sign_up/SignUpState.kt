@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.state.sign_up
+package com.example.android_exam.presentation.state.sign_up
 
 
 data class SignUpState(

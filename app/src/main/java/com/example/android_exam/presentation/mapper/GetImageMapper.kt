@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.mapper
+package com.example.android_exam.presentation.mapper
 
 import com.example.finalproject.domain.model.GetImage
 import com.example.finalproject.presentation.model.Image

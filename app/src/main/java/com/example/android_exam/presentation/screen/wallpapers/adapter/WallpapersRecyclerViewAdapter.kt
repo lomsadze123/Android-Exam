@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.wallpapers.adapter
+package com.example.android_exam.presentation.screen.wallpapers.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

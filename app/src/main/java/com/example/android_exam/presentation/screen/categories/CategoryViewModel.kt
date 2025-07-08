@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.categories
+package com.example.android_exam.presentation.screen.categories
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

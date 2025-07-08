@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.model
+package com.example.android_exam.presentation.model
 
 data class Image(
     val id: Long,

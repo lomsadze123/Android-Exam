@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.event
+package com.example.android_exam.presentation.event
 
 sealed interface WallpapersEvent {
     data class FilterByCategoryEvent(val category: String) : WallpapersEvent

@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.auth
+package com.example.android_exam.presentation.screen.auth
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

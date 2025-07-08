@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.wallpapers.listener
+package com.example.android_exam.presentation.screen.wallpapers.listener
 
 import com.example.finalproject.presentation.model.Image
 

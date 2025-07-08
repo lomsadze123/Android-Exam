@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.auth
+package com.example.android_exam.presentation.screen.auth
 
 import com.example.finalproject.databinding.FragmentAuthContainerBinding
 import com.example.finalproject.presentation.base.BaseFragment

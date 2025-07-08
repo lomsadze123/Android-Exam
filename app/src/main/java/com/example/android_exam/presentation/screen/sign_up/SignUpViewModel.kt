@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.sign_up
+package com.example.android_exam.presentation.screen.sign_up
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

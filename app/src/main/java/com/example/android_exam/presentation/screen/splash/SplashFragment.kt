@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.splash
+package com.example.android_exam.presentation.screen.splash
 
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle

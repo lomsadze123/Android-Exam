@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.wallpapers
+package com.example.android_exam.presentation.screen.wallpapers
 
 import android.util.Log.d
 import android.view.View
