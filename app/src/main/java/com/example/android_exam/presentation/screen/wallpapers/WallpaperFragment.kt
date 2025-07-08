@@ -10,8 +10,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
-import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
+import com.example.android_exam.data.common.AppError
 import com.example.android_exam.databinding.FragmentWallpaperBinding
 import com.example.android_exam.presentation.base.BaseFragment
 import com.example.android_exam.presentation.event.WallpapersEvent
@@ -20,8 +20,6 @@ import com.example.android_exam.presentation.model.Image
 import com.example.android_exam.presentation.model.category.Categories
 import com.example.android_exam.presentation.screen.wallpapers.adapter.WallpapersRecyclerViewAdapter
 import com.example.android_exam.presentation.screen.wallpapers.listener.OnWallpaperClickListener
-import com.example.android_exam.data.common.AppError
-import com.example.android_exam.presentation.screen.wallpapers.WallpaperFragmentDirections
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
@@ -37,7 +35,7 @@ class WallpaperFragment : BaseFragment<FragmentWallpaperBinding>(FragmentWallpap
         d("showResult", "hello")
         getCategory()
         with(binding.recyclerWallpapers) {
-            layoutManager = StaggeredGridLayoutManager(3, RecyclerView.VERTICAL)
+            layoutManager = GridLayoutManager(requireContext(), 2)
             adapter = wallpaperRecyclerViewAdapter.apply {
                 setOnWallpaperClickListener(this@WallpaperFragment)
             }
