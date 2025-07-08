@@ -4,10 +4,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.android_exam.presentation.event.SignInEvent
 import com.example.android_exam.presentation.state.sign_in.SignInState
-import com.example.androidproject.data.common.Resource
-import com.example.androidproject.domain.usecase.sign_in.SignInWithEmailAndPasswordUseCase
-import com.example.androidproject.domain.usecase.validation.EmailValidatorUseCase
-import com.example.androidproject.domain.usecase.validation.PasswordValidatorUseCase
+import com.example.android_exam.data.common.Resource
+import com.example.android_exam.domain.usecase.sign_in.SignInWithEmailAndPasswordUseCase
+import com.example.android_exam.domain.usecase.validation.EmailValidatorUseCase
+import com.example.android_exam.domain.usecase.validation.PasswordValidatorUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow

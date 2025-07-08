@@ -1,4 +1,4 @@
-package com.example.finalproject.presentation.screen.profile
+package com.example.android_exam.presentation.screen.profile
 
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle

@@ -1,10 +1,10 @@
-package com.example.androidproject.domain.usecase.wallpaper_details
+package com.example.android_exam.domain.usecase.wallpaper_details
 
-import com.example.androidproject.data.common.Resource
-import com.example.androidproject.data.mapper.base.asResource
-import com.example.androidproject.presentation.mapper.toPresenter
-import com.example.androidproject.domain.repository.SingleImageRepository
-import com.example.androidproject.presentation.model.Image
+import com.example.android_exam.data.common.Resource
+import com.example.android_exam.data.mapper.base.asResource
+import com.example.android_exam.presentation.mapper.toPresenter
+import com.example.android_exam.domain.repository.SingleImageRepository
+import com.example.android_exam.presentation.model.Image
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

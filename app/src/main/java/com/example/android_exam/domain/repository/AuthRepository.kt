@@ -1,6 +1,6 @@
-package com.example.androidproject.domain.repository
+package com.example.android_exam.domain.repository
 
-import com.example.androidproject.data.common.Resource
+import com.example.android_exam.data.common.Resource
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.coroutines.flow.Flow
 

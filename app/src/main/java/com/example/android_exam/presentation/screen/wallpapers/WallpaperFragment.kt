@@ -20,8 +20,8 @@ import com.example.android_exam.presentation.model.Image
 import com.example.android_exam.presentation.model.category.Categories
 import com.example.android_exam.presentation.screen.wallpapers.adapter.WallpapersRecyclerViewAdapter
 import com.example.android_exam.presentation.screen.wallpapers.listener.OnWallpaperClickListener
-import com.example.androidproject.data.common.AppError
-import com.example.finalproject.presentation.screen.wallpapers.WallpaperFragmentDirections
+import com.example.android_exam.data.common.AppError
+import com.example.android_exam.presentation.screen.wallpapers.WallpaperFragmentDirections
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

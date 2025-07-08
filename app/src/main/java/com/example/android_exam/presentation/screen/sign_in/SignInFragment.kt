@@ -10,7 +10,7 @@ import com.example.android_exam.databinding.FragmentSignInBinding
 import com.example.android_exam.presentation.base.BaseFragment
 import com.example.android_exam.presentation.event.SignInEvent
 import com.example.android_exam.presentation.state.sign_in.SignInState
-import com.example.finalproject.presentation.screen.auth.AuthContainerFragmentDirections
+import com.example.android_exam.presentation.screen.auth.AuthContainerFragmentDirections
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

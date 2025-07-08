@@ -1,6 +1,6 @@
-package com.example.androidproject.data.service
+package com.example.android_exam.data.service
 
-import com.example.androidproject.data.model.WallpaperResponseDto
+import com.example.android_exam.data.model.WallpaperResponseDto
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

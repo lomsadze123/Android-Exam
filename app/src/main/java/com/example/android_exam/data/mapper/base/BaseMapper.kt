@@ -1,6 +1,6 @@
-package com.example.androidproject.data.mapper.base
+package com.example.android_exam.data.mapper.base
 
-import com.example.androidproject.data.common.Resource
+import com.example.android_exam.data.common.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 

@@ -1,4 +1,4 @@
-package com.example.androidproject.data.common
+package com.example.android_exam.data.common
 
 sealed class Resource<T>(
     val isLoading: Boolean = false,

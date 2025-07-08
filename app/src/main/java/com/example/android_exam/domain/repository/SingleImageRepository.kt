@@ -1,7 +1,7 @@
-package com.example.androidproject.domain.repository
+package com.example.android_exam.domain.repository
 
-import com.example.androidproject.data.common.Resource
-import com.example.androidproject.domain.model.GetImage
+import com.example.android_exam.domain.model.GetImage
+import com.example.android_exam.data.common.Resource
 import kotlinx.coroutines.flow.Flow
 
 interface SingleImageRepository {

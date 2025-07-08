@@ -10,7 +10,7 @@ import androidx.annotation.RequiresPermission
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
-import com.example.androidproject.data.common.AppError
+import com.example.android_exam.data.common.AppError
 import javax.inject.Inject
 
 class WallpaperUtil @Inject constructor(val context: Context) {

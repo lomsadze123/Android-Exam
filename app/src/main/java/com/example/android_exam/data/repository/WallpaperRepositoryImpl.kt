@@ -1,13 +1,15 @@
-package com.example.androidproject.data.repository
+package com.example.android_exam.data.repository
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-import com.example.androidproject.BuildConfig
-import com.example.androidproject.data.paging.WallpaperPagingSource
-import com.example.androidproject.data.service.WallpaperApiService
-import com.example.androidproject.domain.model.GetImage
-import com.example.androidproject.domain.repository.WallpaperRepository
+import com.example.android_exam.data.paging.WallpaperPagingSource
+import com.example.android_exam.BuildConfig
+import com.example.android_exam.data.paging.WallpaperPagingSource
+import com.example.android_exam.data.service.WallpaperApiService
+import com.example.android_exam.domain.model.GetImage
+import com.example.android_exam.domain.repository.WallpaperRepository
+import com.google.firebase.BuildConfig
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

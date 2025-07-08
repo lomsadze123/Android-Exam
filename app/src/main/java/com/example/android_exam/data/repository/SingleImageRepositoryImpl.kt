@@ -1,12 +1,12 @@
-package com.example.androidproject.data.repository
+package com.example.android_exam.data.repository
 
-import com.example.androidproject.data.common.response_handler.HandleResponse
-import com.example.androidproject.data.common.Resource
-import com.example.androidproject.data.mapper.base.asResource
-import com.example.androidproject.data.mapper.wallpaper_details.toDomain
-import com.example.androidproject.data.service.WallpaperApiService
-import com.example.androidproject.domain.model.GetImage
-import com.example.androidproject.domain.repository.SingleImageRepository
+import com.example.android_exam.data.common.response_handler.HandleResponse
+import com.example.android_exam.data.common.Resource
+import com.example.android_exam.data.mapper.base.asResource
+import com.example.android_exam.data.mapper.wallpaper_details.toDomain
+import com.example.android_exam.data.service.WallpaperApiService
+import com.example.android_exam.domain.model.GetImage
+import com.example.android_exam.domain.repository.SingleImageRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

@@ -1,13 +1,13 @@
-package com.example.androidproject.di
+package com.example.android_exam.di
 
 import android.content.Context
-import com.example.androidproject.BuildConfig
-import com.example.androidproject.data.common.response_handler.HandleAuthResponse
-import com.example.androidproject.data.common.response_handler.HandleResponse
-import com.example.androidproject.data.repository.AuthRepositoryImpl
-import com.example.androidproject.data.service.WallpaperApiService
-import com.example.androidproject.domain.repository.AuthRepository
-import com.example.androidproject.presentation.util.WallpaperUtil
+import com.example.android_exam.data.repository.AuthRepositoryImpl
+import com.example.android_exam.presentation.util.WallpaperUtil
+import com.example.android_exam.data.common.response_handler.HandleAuthResponse
+import com.example.android_exam.data.common.response_handler.HandleResponse
+import com.example.android_exam.data.service.WallpaperApiService
+import com.example.android_exam.domain.repository.AuthRepository
+import com.google.firebase.BuildConfig
 import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 import com.squareup.moshi.Moshi
@@ -66,7 +66,10 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideRetrofitClient(okHttpClient: OkHttpClient, moshiConverterFactory: MoshiConverterFactory): Retrofit {
+    fun provideRetrofitClient(
+        okHttpClient: OkHttpClient,
+        moshiConverterFactory: MoshiConverterFactory
+    ): Retrofit {
         return Retrofit.Builder()
             .baseUrl(BuildConfig.BASE_URL)
             .addConverterFactory(moshiConverterFactory)
@@ -76,10 +79,11 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideAuthRepository(handleAuthResponse: HandleAuthResponse): AuthRepository = AuthRepositoryImpl(
-        auth = Firebase.auth,
-        handleAuthResponse = handleAuthResponse
-    )
+    fun provideAuthRepository(handleAuthResponse: HandleAuthResponse): AuthRepository =
+        AuthRepositoryImpl(
+            auth = Firebase.auth,
+            handleAuthResponse = handleAuthResponse
+        )
 
     @Provides
     @Singleton

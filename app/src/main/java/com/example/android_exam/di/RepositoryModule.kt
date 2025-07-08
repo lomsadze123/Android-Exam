@@ -1,11 +1,11 @@
-package com.example.androidproject.di
+package com.example.android_exam.di
 
-import com.example.androidproject.data.common.response_handler.HandleResponse
-import com.example.androidproject.data.repository.SingleImageRepositoryImpl
-import com.example.androidproject.data.repository.WallpaperRepositoryImpl
-import com.example.androidproject.data.service.WallpaperApiService
-import com.example.androidproject.domain.repository.SingleImageRepository
-import com.example.androidproject.domain.repository.WallpaperRepository
+import com.example.android_exam.data.common.response_handler.HandleResponse
+import com.example.android_exam.data.repository.SingleImageRepositoryImpl
+import com.example.android_exam.data.repository.WallpaperRepositoryImpl
+import com.example.android_exam.data.service.WallpaperApiService
+import com.example.android_exam.domain.repository.SingleImageRepository
+import com.example.android_exam.domain.repository.WallpaperRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

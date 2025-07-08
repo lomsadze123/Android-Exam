@@ -20,7 +20,7 @@ import com.example.android_exam.presentation.extension.loadImage
 import com.example.android_exam.presentation.extension.showSnackBar
 import com.example.android_exam.presentation.state.wallpaper_details.WallpaperDetailsState
 import com.example.android_exam.presentation.util.WallpaperUtil
-import com.example.finalproject.presentation.screen.wallpaper_details.WallpaperDetailsFragmentArgs
+import com.example.android_exam.presentation.screen.wallpaper_details.WallpaperDetailsFragmentArgs
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch

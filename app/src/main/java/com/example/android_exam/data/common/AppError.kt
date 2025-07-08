@@ -1,4 +1,4 @@
-package com.example.androidproject.data.common
+package com.example.android_exam.data.common
 
 import android.util.Log.d
 import com.google.firebase.FirebaseNetworkException

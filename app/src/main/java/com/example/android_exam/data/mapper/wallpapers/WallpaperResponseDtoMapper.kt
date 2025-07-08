@@ -1,11 +1,10 @@
-package com.example.androidproject.data.mapper.wallpapers
+package com.example.android_exam.data.mapper.wallpapers
 
-import com.example.androidproject.data.mapper.wallpaper_details.toDomain
-import com.example.androidproject.data.model.WallpaperResponseDto
-import com.example.androidproject.domain.model.GetWallpaperResponse
+import com.example.android_exam.data.mapper.wallpaper_details.toDomain
+import com.example.android_exam.data.model.WallpaperResponseDto
+import com.example.android_exam.domain.model.GetWallpaperResponse
 
 fun WallpaperResponseDto.toDomain(): GetWallpaperResponse {
     return GetWallpaperResponse(
-        hits = hits.map { it.toDomain() }
-    )
+        hits = hits.map { it.toDomain() })
 }

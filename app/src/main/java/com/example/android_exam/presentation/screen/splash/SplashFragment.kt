@@ -8,7 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.android_exam.databinding.FragmentSplashBinding
 import com.example.android_exam.presentation.base.BaseFragment
 import com.example.android_exam.presentation.event.SplashEvent
-import com.example.finalproject.presentation.screen.splash.SplashFragmentDirections
+import com.example.android_exam.presentation.screen.splash.SplashFragmentDirections
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.channels.BufferOverflow
 import kotlinx.coroutines.flow.buffer

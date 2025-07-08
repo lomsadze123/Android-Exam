@@ -1,4 +1,4 @@
-package com.example.androidproject.data.model
+package com.example.android_exam.data.model
 
 data class ImageDto(
     val id: Long,

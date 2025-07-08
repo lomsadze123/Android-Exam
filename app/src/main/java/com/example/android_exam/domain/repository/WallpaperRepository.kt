@@ -1,7 +1,7 @@
-package com.example.androidproject.domain.repository
+package com.example.android_exam.domain.repository
 
 import androidx.paging.PagingData
-import com.example.androidproject.domain.model.GetImage
+import com.example.android_exam.domain.model.GetImage
 import kotlinx.coroutines.flow.Flow
 
 interface WallpaperRepository {

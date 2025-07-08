@@ -1,9 +1,9 @@
-package com.example.androidproject.data.repository
+package com.example.android_exam.data.repository
 
 import android.net.Uri
-import com.example.androidproject.data.common.Resource
-import com.example.androidproject.data.common.response_handler.HandleAuthResponse
-import com.example.androidproject.domain.repository.AuthRepository
+import com.example.android_exam.data.common.Resource
+import com.example.android_exam.data.common.response_handler.HandleAuthResponse
+import com.example.android_exam.domain.repository.AuthRepository
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.userProfileChangeRequest

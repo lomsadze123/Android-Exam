@@ -1,7 +1,7 @@
-package com.example.androidproject.data.common.response_handler
+package com.example.android_exam.data.common.response_handler
 
-import com.example.androidproject.data.common.AppError
-import com.example.androidproject.data.common.Resource
+import com.example.android_exam.data.common.AppError
+import com.example.android_exam.data.common.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 

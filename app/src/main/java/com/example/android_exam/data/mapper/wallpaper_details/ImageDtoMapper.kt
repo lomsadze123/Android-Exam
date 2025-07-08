@@ -1,7 +1,7 @@
-package com.example.androidproject.data.mapper.wallpaper_details
+package com.example.android_exam.data.mapper.wallpaper_details
 
-import com.example.androidproject.data.model.ImageDto
-import com.example.androidproject.domain.model.GetImage
+import com.example.android_exam.data.model.ImageDto
+import com.example.android_exam.domain.model.GetImage
 
 fun ImageDto.toDomain(): GetImage {
     return GetImage(

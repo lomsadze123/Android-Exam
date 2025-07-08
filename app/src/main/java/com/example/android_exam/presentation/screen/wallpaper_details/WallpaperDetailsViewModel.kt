@@ -4,9 +4,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.android_exam.presentation.event.WallpaperDetailsEvent
 import com.example.android_exam.presentation.state.wallpaper_details.WallpaperDetailsState
-import com.example.androidproject.data.common.Resource
-import com.example.androidproject.domain.usecase.profile.SetUserImageUseCase
-import com.example.androidproject.domain.usecase.wallpaper_details.GetWallpaperDetailsUseCase
+import com.example.android_exam.data.common.Resource
+import com.example.android_exam.domain.usecase.profile.SetUserImageUseCase
+import com.example.android_exam.domain.usecase.wallpaper_details.GetWallpaperDetailsUseCase
 import com.google.firebase.BuildConfig
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -32,7 +32,7 @@ class WallpaperDetailsViewModel @Inject constructor(
 
     private fun setData(id: Long) {
         viewModelScope.launch {
-            getWallpaperDetailsUseCase(BuildConfig.API_KEY, id).collect { resource ->
+            getWallpaperDetailsUseCase(BuildConfig.debug.API_KEY, id).collect { resource ->
                 _imageDetailsStateFlow.update { currentState ->
                     when (resource) {
                         is Resource.Loading -> currentState.copy(isLoading = resource.loading)

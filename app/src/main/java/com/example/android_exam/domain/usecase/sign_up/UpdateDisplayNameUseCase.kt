@@ -1,7 +1,7 @@
-package com.example.androidproject.domain.usecase.sign_up
+package com.example.android_exam.domain.usecase.sign_up
 
-import com.example.androidproject.data.common.Resource
-import com.example.androidproject.domain.repository.AuthRepository
+import com.example.android_exam.data.common.Resource
+import com.example.android_exam.domain.repository.AuthRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

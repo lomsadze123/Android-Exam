@@ -1,4 +1,4 @@
-package com.example.androidproject.domain.model
+package com.example.android_exam.domain.model
 
 data class GetImage(
     val id: Long,

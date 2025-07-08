@@ -2,7 +2,7 @@ package com.example.android_exam.presentation.extension
 
 import androidx.appcompat.widget.AppCompatImageView
 import com.bumptech.glide.Glide
-import com.example.finalproject.R
+import com.example.android_exam.R
 
 fun AppCompatImageView.loadImage(url: String?) {
     Glide.with(context)

@@ -1,11 +1,10 @@
-package com.example.androidproject.data.paging
+package com.example.android_exam.data.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.androidproject.BuildConfig
-import com.example.androidproject.data.mapper.wallpapers.toDomain
-import com.example.androidproject.data.service.WallpaperApiService
-import com.example.androidproject.domain.model.GetImage
+import com.example.android_exam.data.service.WallpaperApiService
+import com.example.android_exam.domain.model.GetImage
+import com.google.firebase.BuildConfig
 
 class WallpaperPagingSource(
     private val apiService: WallpaperApiService,
@@ -18,8 +17,11 @@ class WallpaperPagingSource(
         return try {
             val page = params.key ?: 1
             val response = apiService.getImages(
-                apiKey = apiKey, query = query, category = category,
-                page = page, perPage = BuildConfig.PAGE_SIZE
+                apiKey = apiKey,
+                query = query,
+                category = category,
+                page = page,
+                perPage = BuildConfig.PAGE_SIZE
             )
             LoadResult.Page(
                 data = response.body()!!.toDomain().hits,

@@ -1,6 +1,6 @@
-package com.example.androidproject.domain.usecase.splash
+package com.example.android_exam.domain.usecase.splash
 
-import com.example.androidproject.domain.repository.AuthRepository
+import com.example.android_exam.domain.repository.AuthRepository
 import com.google.firebase.auth.FirebaseUser
 import javax.inject.Inject
 

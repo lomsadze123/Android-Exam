@@ -7,8 +7,8 @@ import androidx.paging.cachedIn
 import com.example.android_exam.presentation.event.WallpapersEvent
 import com.example.android_exam.presentation.model.Image
 import com.example.android_exam.presentation.model.category.Categories
-import com.example.androidproject.domain.usecase.wallpapers.GetWallpapersByFilterUseCase
-import com.example.androidproject.domain.usecase.wallpapers.GetWallpapersUseCase
+import com.example.android_exam.domain.usecase.wallpapers.GetWallpapersByFilterUseCase
+import com.example.android_exam.domain.usecase.wallpapers.GetWallpapersUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.collectLatest
