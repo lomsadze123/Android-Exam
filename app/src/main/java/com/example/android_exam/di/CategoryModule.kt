@@ -1,7 +1,6 @@
 package com.example.android_exam.di
 
 import com.example.android_exam.data.repository.CategoryRepositoryImpl
-import com.example.android_exam.data.repository.CategoryRepositoryImpl
 import com.example.android_exam.domain.repository.CategoryRepository
 import dagger.Binds
 import dagger.Module

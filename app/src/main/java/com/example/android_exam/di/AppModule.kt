@@ -1,13 +1,13 @@
 package com.example.android_exam.di
 
 import android.content.Context
+import com.example.android_exam.BuildConfig
 import com.example.android_exam.data.repository.AuthRepositoryImpl
 import com.example.android_exam.presentation.util.WallpaperUtil
 import com.example.android_exam.data.common.response_handler.HandleAuthResponse
 import com.example.android_exam.data.common.response_handler.HandleResponse
 import com.example.android_exam.data.service.WallpaperApiService
 import com.example.android_exam.domain.repository.AuthRepository
-import com.google.firebase.BuildConfig
 import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 import com.squareup.moshi.Moshi

@@ -2,9 +2,11 @@ package com.example.android_exam.data.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
+import com.example.android_exam.BuildConfig
+import com.example.android_exam.data.mapper.wallpapers.toDomain
 import com.example.android_exam.data.service.WallpaperApiService
 import com.example.android_exam.domain.model.GetImage
-import com.google.firebase.BuildConfig
+
 
 class WallpaperPagingSource(
     private val apiService: WallpaperApiService,
