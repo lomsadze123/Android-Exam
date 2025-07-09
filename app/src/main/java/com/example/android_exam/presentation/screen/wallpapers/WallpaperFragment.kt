@@ -11,6 +11,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.android_exam.data.common.AppError
 import com.example.android_exam.databinding.FragmentWallpaperBinding
 import com.example.android_exam.presentation.base.BaseFragment
@@ -35,7 +36,7 @@ class WallpaperFragment : BaseFragment<FragmentWallpaperBinding>(FragmentWallpap
         d("showResult", "hello")
         getCategory()
         with(binding.recyclerWallpapers) {
-            layoutManager = GridLayoutManager(requireContext(), 2)
+            layoutManager = LinearLayoutManager(requireContext())
             adapter = wallpaperRecyclerViewAdapter.apply {
                 setOnWallpaperClickListener(this@WallpaperFragment)
             }
